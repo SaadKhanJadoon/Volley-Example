@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Log.i("api", error.toString());
+                Log.e("TAG", "onErrorResponse: "+ error.toString());
             }
         });
         queue.add(myReq);
